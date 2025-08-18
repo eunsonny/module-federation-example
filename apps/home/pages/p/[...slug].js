@@ -1,4 +1,4 @@
-import PDPPage from 'shop/pdp';
+import PDPPage from 'social/pdp';
 const PDP = PDPPage;
 PDP.getInitialProps = PDPPage.getInitialProps;
 export default PDP;

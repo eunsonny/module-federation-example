@@ -10,11 +10,11 @@ const productLinks = [
   return link;
 });
 
-const Shop = props => (
+const Social = props => (
   <div>
     <Head>
-      <title>Shop</title>
-      <link rel="icon" href="/nextjs-ssr/shop/public/favicon.ico" />
+      <title>Social</title>
+      <link rel="icon" href="/nextjs-ssr/social/public/favicon.ico" />
     </Head>
 
     <div className="hero">
@@ -50,4 +50,4 @@ const Shop = props => (
 export const getServerSideProps = async () => {
   return { props: { test: 1234 } };
 };
-export default Shop;
+export default Social;

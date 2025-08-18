@@ -4,7 +4,7 @@ const NextFederationPlugin = require('@module-federation/nextjs-mf');
 const remotes = isServer => {
   const location = isServer ? 'ssr' : 'chunks';
   return {
-    shop: `shop@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
+    social: `social@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
     gathering: `gathering@http://localhost:3000/_next/static/${location}/remoteEntry.js`,
   };
 };
@@ -24,6 +24,7 @@ module.exports = {
         shared: {},
         extraOptions: {
           exposePages: true,
+          
         },
       }),
     );

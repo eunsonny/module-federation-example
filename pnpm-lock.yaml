@@ -57,7 +57,7 @@ importers:
         specifier: 5.101.0
         version: 5.101.0
 
-  apps/shop:
+  apps/social:
     dependencies:
       '@module-federation/nextjs-mf':
         specifier: 8.8.34
