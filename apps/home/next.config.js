@@ -17,7 +17,6 @@ module.exports = {
         filename: 'static/chunks/remoteEntry.js',
         dts: false,
         exposes: {
-          './nav': './components/nav.js',
           './home': './pages/index.js',
           './pages-map': './pages-map.js',
         },
