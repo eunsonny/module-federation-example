@@ -2,11 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-// export const HelloWorld = lazy(() =>
-//   import('./helloWorld').then(mod => {
-//     return { default: mod.HelloWorld };
-//   }),
-// );
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
@@ -17,9 +12,6 @@ const links = [
 
 const Nav = () => (
   <nav>
-    <Suspense>
-      {/* <HelloWorld /> */}
-    </Suspense>
     <ul>
       <li>
         <Link href="/">Home</Link>
