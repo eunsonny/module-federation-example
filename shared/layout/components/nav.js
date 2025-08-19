@@ -14,9 +14,9 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href="/">Home</Link>
-        <Link href="/social">Social</Link>
-        <Link href="/gathering">Gathering</Link>
+        <Link href="http://localhost:3001">Home</Link>
+        <Link href="http://localhost:3002/social">Social</Link>
+        <Link href="http://localhost:3000/gathering">Gathering</Link>
       </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
