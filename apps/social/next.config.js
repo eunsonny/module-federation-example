@@ -6,6 +6,7 @@ const remotes = isServer => {
   return {
     home: `home@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
     gathering: `gathering@http://localhost:3000/_next/static/${location}/remoteEntry.js`,
+    layout: `layout@http://localhost:3003/_next/static/${location}/remoteEntry.js`,
   };
 };
 module.exports = {
