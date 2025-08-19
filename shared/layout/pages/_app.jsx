@@ -1,18 +1,10 @@
 import App from 'next/app';
-import { lazy, Suspense } from 'react';
-// import Nav from '../components/nav';
-const Nav = lazy(() => {
-  console.log(import('layout/gnb'));
-  return import('layout/gnb');
-});
+import Nav from '../components/nav';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Nav /> */}
-      <Suspense fallback={'loading'}>
-        <Nav />
-      </Suspense>
+      <Nav />
       <Component {...pageProps} />
       <style jsx>{`
         .hero {

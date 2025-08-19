@@ -2,5 +2,5 @@ packages:
   - 'apps/gathering'
   - 'apps/social'
   - 'apps/home'
-  - 'shared/gnb'
+  - 'shared/layout'
 

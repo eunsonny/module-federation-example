@@ -17,13 +17,13 @@ module.exports = {
         filename: 'static/chunks/remoteEntry.js',
         dts: false,
         exposes: {
-          './gnb': './components/gnb.js',
+          './gnb': './components/nav.js',
         },
-        remotes: remotes(options.isServer),
+        // remotes: remotes(options.isServer),
         shared: {},
         extraOptions: {
-          exposePages: true,
-          
+          // exposePages: true,
+          automaticAsyncBoundary: true,
         },
       }),
     );

@@ -6,6 +6,7 @@ const remotes = isServer => {
   return {
     social: `social@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
     gathering: `gathering@http://localhost:3000/_next/static/${location}/remoteEntry.js`,
+    layout: `layout@http://localhost:3003/_next/static/${location}/remoteEntry.js`,
   };
 };
 module.exports = {
@@ -24,7 +25,7 @@ module.exports = {
         shared: {},
         extraOptions: {
           exposePages: true,
-          
+          automaticAsyncBoundary: true,
         },
       }),
     );

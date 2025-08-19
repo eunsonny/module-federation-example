@@ -78,8 +78,11 @@ importers:
         specifier: 5.101.0
         version: 5.101.0
 
-  shared/gnb:
+  shared/layout:
     dependencies:
+      '@module-federation/nextjs-mf':
+        specifier: 8.8.34
+        version: 8.8.34(@rspack/core@1.4.11(@swc/helpers@0.5.17))(next@14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-jsx@5.1.1(react@18.2.0))(typescript@5.4.3)(webpack@5.101.0)
       next:
         specifier: 14.1.4
         version: 14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
