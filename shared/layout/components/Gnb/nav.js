@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+const Title = lazy(() => import('./title').then(mod => ({ default: mod.Title })));
 
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
@@ -14,7 +15,7 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href="http://localhost:3001">Home</Link>
+        <Link href="http://localhost:3001/">Home</Link>
         <Link href="http://localhost:3002/social">Social</Link>
         <Link href="http://localhost:3000/gathering">Gathering</Link>
       </li>
@@ -24,6 +25,7 @@ const Nav = () => (
         </li>
       ))}
       <p>이건 GNB에서 온거야</p>
+      <Title />
     </ul>
 
     <style jsx>{`
@@ -33,6 +35,7 @@ const Nav = () => (
       }
       nav {
         text-align: center;
+        border: 1px solid red;
       }
       ul {
         display: flex;

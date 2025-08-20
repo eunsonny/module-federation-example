@@ -18,8 +18,9 @@ const Social = props => (
     </Head>
 
     <div className="hero">
-      <h1>Shop Page</h1>
+      <h1>Social Page</h1>
       <h3 className="title">This is a federated page owned by localhost:3002</h3>
+      <h3 className="title">여기는 소셜의 첫 페이지 입니다.</h3>
       <ul>
         {productLinks.map(({ key, href, label }) => (
           <li key={key}>
@@ -32,6 +33,11 @@ const Social = props => (
       .hero {
         width: 100%;
         color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
       }
       .title {
         margin: 0;

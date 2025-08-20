@@ -1,5 +1,5 @@
 import App from 'next/app';
-import Nav from '../components/nav';
+import Nav from '../components/Gnb/nav';
 
 function MyApp({ Component, pageProps }) {
   return (

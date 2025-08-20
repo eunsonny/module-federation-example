@@ -16,7 +16,8 @@ const Home = ({ loaded }) => {
         <Suspense fallback={'loading remote title'}>
           <RemoteTitle />
         </Suspense>
-        <h1 className="title">
+        <h1>이건 홈페이지에요</h1>
+        {/* <h1 className="title">
           Welcome to Next.js on Webpack 5! <code>home</code>
         </h1>
         <p className="description">
@@ -36,13 +37,18 @@ const Home = ({ loaded }) => {
             <h3>Examples &rarr;</h3>
             <p>Find other example boilerplates on the Next.js GitHub.</p>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`
         .hero {
           width: 100%;
           color: #333;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
         }
 
         .title {

@@ -1,5 +1,7 @@
-import Nav from "../components/nav";
 
-export function Index() {
-  return <Nav />
+
+const Index = () => {
+  return <div />
 }
+
+export default Index;
