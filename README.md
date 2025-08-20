@@ -1,3 +1,14 @@
+
+* gathering - 이벤트, 포트 3000
+* home - 유저웹, 포트 3001
+* social - 소셜, 포트 3002
+
+GNB는 모두 shared/layout에 있는 Gnb를 사용.
+
+pnpm install 후 pnpm run start로 로컬 서버 실행
+
+
+
 # Support For Next.js is ending
 
 https://github.com/module-federation/core/issues/3153
